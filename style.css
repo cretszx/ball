@@ -1,0 +1,54 @@
+.ball{
+    margin-left: 50%;
+    margin-top: 150px;
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+    background-image: -webkit-radial-gradient(38px 34px, white, red);
+    position: absolute;
+    animation-name: ball;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ball {
+    0%{
+        bottom: 50%;
+        height: 125px;
+    }
+
+    50%{
+        bottom: 0%;
+    }
+
+    79%{
+        height: 110px
+    }
+
+    89%{
+        height: 125px;
+    }
+
+    95%{
+        height: 125px;
+    }
+
+    99%{
+        bottom: 50%;
+        height: 125px;
+    }
+}
+
+label{
+    position: absolute;
+    background-color: grey;
+    filter: blur(5px);
+    height:55px;
+    width: 113px;
+    border-radius: 50%;
+    top: 97%;
+    left: 51.5%;
+}
+
+
